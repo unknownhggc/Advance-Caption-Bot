@@ -19,11 +19,11 @@ SILICON_PIC = os.environ.get("SILICON_PIC", "https://telegra.ph/file/21a8e96b45c
 API_ID = int(getenv("API_ID", ""))
 API_HASH = str(getenv("API_HASH", ""))
 BOT_TOKEN = str(getenv("BOT_TOKEN", ""))
-FORCE_SUB = os.environ.get("FORCE_SUB", "") 
-MONGO_DB = str(getenv("MONGO_DB", "mongodb+srv://replacewithyourmongodb:replacewithyourmongodb@cluster0.zi78j51.mongodb.net/?retryWrites=true&w=majority",))
+FORCE_SUB = os.environ.get("FORCE_SUB", "0") 
+MONGO_DB = str(getenv("MONGO_DB", "",))
 DEF_CAP = str(
     getenv(
         "DEF_CAP",
-        "<b>File Name:- `{file_name}`\n\n{file_size}</b>",
+        "<b>{title} {season} {episode} {year} {ott} {quality} {lanaudio} {lib} {shortsub}{extension}</b>",
     )
 )
